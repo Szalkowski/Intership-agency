@@ -439,7 +439,7 @@ a {
 .newsletter h3 {
     padding-right: 247px;
 }
-.newsletter p {
+.news-info {
     color: #999999;
 }
 
@@ -464,6 +464,45 @@ a {
     padding: 0 44px;
     border: none;
     background: #7beec7;
+}
+
+.map li {
+    display: inline-block;
+    float: left;
+    margin-left: -5px;
+    line-height: 48px;
+    color: #9a9a9a;
+}
+
+.map li::before {
+    content: "-";
+    padding: 0 20px;
+}
+
+.map li:nth-of-type(1)::before {
+    content: "";
+    padding-left: 60px;
+}
+
+.copyrights {
+    float: right;
+    padding-right: 80px;
+    font-size: 14px;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: #9a9a9a;
+}
+
+.social-medias {
+clear: both;
+float: right;
+padding-right: 80px;
+line-height: 48px;
+margin-bottom: 48px;
+}
+.media-icon {
+    font-size: 18px;
+    color: #999999;
 }
 /* ==========================================================================
    Helper classes

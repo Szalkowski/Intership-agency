@@ -142,7 +142,7 @@ a {
 }
 
 .serv-icon {
-    font-size: 48px;
+    font-size: 31px;
     color: #60606e;
 
   /* header */
@@ -164,13 +164,15 @@ a {
 .hero {
     position: absolute;
     top: 255px;
-    left: calc(50% - 280px);
+    left: calc(50% - 276px);
     width: 555px;
 }
 
 .company-name {
-
-    line-height: 100px;
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 80px;
     text-align: center;
     border: 10px solid #60606e;
 }
@@ -178,9 +180,11 @@ a {
 .company-name:before {
     content: "we're";
     position: absolute;
-    bottom: 120px;
-    left: calc(50% - 47px);
+    bottom: 99px;
+    left: calc(50% - 51px);
     width: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
     line-height: 30px;
     font-size: 18px;
     background: #7beec7;
@@ -188,7 +192,7 @@ a {
 
 .hero .description {
     position: absolute;
-    padding-top: 30px;
+    padding-top: 25px;
     text-align: center;
 }
 
@@ -200,7 +204,7 @@ a {
 .subtitle {
     position: absolute;
     right: 310px;
-    bottom: 270px;
+    bottom: 240px;
     z-index: 9;
 }
 
@@ -216,9 +220,10 @@ a {
 
 .our-history {
     position: absolute;
-    bottom: 100px;
-    right: 80px;
+    bottom: 50px;
+    right: 85px;
     width: 550px;
+    line-height: 30px;
 }
 .header-hp a {
     position: absolute;
@@ -246,7 +251,7 @@ a {
 .why-us {
     position: relative;
     width: 263px;
-    margin: 250px auto 0;
+    margin: 240px auto 0;
     text-align: center;
 }
 
@@ -263,25 +268,34 @@ a {
 
 .content .description {
     width: 730px;
-    padding-top: 20px;
+    padding-top: 13px;
     margin: 0 auto;
     text-align: center;
+    font-size: 14px;
 }
 
 .title {
-    padding-bottom: 80px;
+    padding: 0 0 94px;
 }
 .services {
     float: left;
-    width: 700px;
+    width: 683px;
     padding-left: 80px;
 }
 
 .service {
     float: left;
-    padding-right: 40px;
+    padding-right: 147px;
 }
 
+.service:nth-of-type(2),
+.service:nth-of-type(2) {
+    padding-right: 0;
+}
+
+.service h3 {
+    padding-top: 6px;
+}
 .service ul {
     padding-top: 10px;
 }
@@ -293,12 +307,8 @@ a {
     color: #999;
 }
 
-.service h3,
-.service ul {
-    padding-left: 20px;
-}
 .service ul li:nth-last-child(1) {
-    padding-bottom: 20px;
+    padding-bottom: 47px;
 }
 
 .reasons img {
@@ -311,7 +321,7 @@ a {
 .portfolio {
     clear: both;
     position: relative;
-    padding: 50px 0 0 80px;
+    padding-top: 110px;
     height: 1120px;
 }
 
@@ -333,21 +343,26 @@ a {
     z-index: -1;
 }
 .portfolio p {
-    width: 877px;
-    padding: 20px 0 105px;
+    width: 812px;
+    padding: 12px 0 98px;
     margin: 0 auto;
+    font-size: 14px;
     text-align: center;
 }
 
 .categories {
     float: left;
+    padding-left: 80px;
 }
 .category-title {
+    margin-top: -22px;
     width: 200px;
+    padding-bottom: 37px;
 }
 
 .category {
-    line-height: 48px;
+    padding-left: 20px;
+    line-height: 40px;
     font-size: 14px;
     color: #60606e;
 }
@@ -356,7 +371,7 @@ a {
 .img {
     position: absolute;
     right: 80px;
-    width: 820px;
+    width: 848px;
 }
 
 .img img {
@@ -370,7 +385,7 @@ a {
 }
 .img img:nth-of-type(2) {
     top: 0;
-    left: 280px;
+    left: 293px;
 }
 .img img:nth-of-type(3) {
     top: 0;
@@ -382,7 +397,7 @@ a {
 }
 .img img:nth-of-type(5) {
     top: 200px;
-    left: 280px;
+    left: 293px;
 }
 .img img:nth-of-type(6) {
     top: 420px;
@@ -394,7 +409,7 @@ a {
 }
 .img img:nth-of-type(8) {
     top: 626px;
-    left: 280px;
+    left: 293px;
 }
 .img img:nth-of-type(9) {
     top: 599px;
@@ -403,13 +418,14 @@ a {
 
 .footer {
     position: relative;
+    margin-top: 124px;
 }
 
 .contact {
     position: relative;
-    height: 330px;
+    height: 287px;
     background: #7beec7;
-    padding: 120px 80px 0;
+    padding: 44px 80px 0;
 }
 
 .contact h2 {
@@ -419,25 +435,32 @@ a {
 }
 .contact a {
     position: absolute;
-    top: 240px;
+    top: 151px;
     left: 80px;
     width: 170px;
+    font-size: 14px;
     line-height: 50px;
     text-align: center;
+    text-transform: uppercase;
     color: #7beec7;
     background: #fff;
 }
 .newsletter {
     position: relative;
     float: right;
-    width: 503px;
-    height: 160px;
-    padding: 50px 50px;
+    width: 511px;
+    height: 200px;
+    padding: 19px 21px;
     background: #fff;
 }
 
 .newsletter h3 {
-    padding-right: 247px;
+    padding-right: 118px;
+    font-size: 24px;
+}
+
+.newsletter p {
+    padding: 8px 0;
 }
 .news-info {
     color: #999999;
@@ -445,14 +468,14 @@ a {
 
 .newsletter form {
     position: absolute;
-    bottom: 51px;
+    bottom: 17px;
 }
 
 .newsletter input {
-    width: 345px;
+    width: 355px;
     font-size: 12px;
     line-height: 48px;
-    padding-left: 30px;
+    padding-left: 14px;
     margin-right: -5px;
 }
 
@@ -461,7 +484,7 @@ a {
     text-transform: uppercase;
     line-height: 55px;
     color: #fff;
-    padding: 0 44px;
+    padding: 0 49px;
     border: none;
     background: #7beec7;
 }
@@ -469,14 +492,17 @@ a {
 .map li {
     display: inline-block;
     float: left;
-    margin-left: -5px;
+    font-size: 14px;
     line-height: 48px;
     color: #9a9a9a;
 }
 
+.map {
+    padding-top: 14px;
+}
 .map li::before {
     content: "-";
-    padding: 0 20px;
+    padding: 0 16px;
 }
 
 .map li:nth-of-type(1)::before {
@@ -488,19 +514,20 @@ a {
     float: right;
     padding-right: 80px;
     font-size: 14px;
-    line-height: 48px;
+    line-height: 20px;
     text-transform: uppercase;
     color: #9a9a9a;
 }
 
 .social-medias {
-clear: both;
-float: right;
-padding-right: 80px;
-line-height: 48px;
-margin-bottom: 48px;
+    clear: both;
+    float: right;
+    padding-right: 80px;
+    line-height: 38px;
+    margin-bottom: 48px;
 }
 .media-icon {
+    padding-left: 2px;
     font-size: 18px;
     color: #999999;
 }

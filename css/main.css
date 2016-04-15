@@ -220,7 +220,7 @@ a {
     right: 80px;
     width: 550px;
 }
-.history a {
+.header-hp a {
     position: absolute;
     right: 80px;
     bottom: -25px;
@@ -245,7 +245,7 @@ a {
 
 .why-us {
     position: relative;
-    width: 300px;
+    width: 263px;
     margin: 250px auto 0;
     text-align: center;
 }
@@ -254,8 +254,8 @@ a {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 20px;
-    width: 70px;
+    left: 0;
+    width: 75px;
     height: 20px;
     background-color: #7beec7;
     z-index: -1;
@@ -306,8 +306,164 @@ a {
     margin-right: 80px;
 }
 
+/* portfolio */
+
 .portfolio {
     clear: both;
+    position: relative;
+    padding: 50px 0 0 80px;
+    height: 1120px;
+}
+
+.title-portfolio {
+    position: relative;
+    text-align: center;
+    width: 260px;
+    margin: 0 auto;
+}
+
+.title-portfolio:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 75px;
+    height: 20px;
+    background-color: #7beec7;
+    z-index: -1;
+}
+.portfolio p {
+    width: 877px;
+    padding: 20px 0 105px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.categories {
+    float: left;
+}
+.category-title {
+    width: 200px;
+}
+
+.category {
+    line-height: 48px;
+    font-size: 14px;
+    color: #60606e;
+}
+
+
+.img {
+    position: absolute;
+    right: 80px;
+    width: 820px;
+}
+
+.img img {
+    position: absolute;
+    padding-bottom: 20px;
+}
+.img img:nth-of-type(1)
+{
+    top: 0;
+    left: 0;
+}
+.img img:nth-of-type(2) {
+    top: 0;
+    left: 280px;
+}
+.img img:nth-of-type(3) {
+    top: 0;
+    right: 0;
+}
+.img img:nth-of-type(4) {
+    top: 200px;
+    left: 0;
+}
+.img img:nth-of-type(5) {
+    top: 200px;
+    left: 280px;
+}
+.img img:nth-of-type(6) {
+    top: 420px;
+    right: 0;
+}
+.img img:nth-of-type(7) {
+    top: 495px;
+    left: 0;
+}
+.img img:nth-of-type(8) {
+    top: 626px;
+    left: 280px;
+}
+.img img:nth-of-type(9) {
+    top: 599px;
+    right: 0;
+}
+
+.footer {
+    position: relative;
+}
+
+.contact {
+    position: relative;
+    height: 330px;
+    background: #7beec7;
+    padding: 120px 80px 0;
+}
+
+.contact h2 {
+    float: left;
+    width: 500px;
+    color: #fff;
+}
+.contact a {
+    position: absolute;
+    top: 240px;
+    left: 80px;
+    width: 170px;
+    line-height: 50px;
+    text-align: center;
+    color: #7beec7;
+    background: #fff;
+}
+.newsletter {
+    position: relative;
+    float: right;
+    width: 503px;
+    height: 160px;
+    padding: 50px 50px;
+    background: #fff;
+}
+
+.newsletter h3 {
+    padding-right: 247px;
+}
+.newsletter p {
+    color: #999999;
+}
+
+.newsletter form {
+    position: absolute;
+    bottom: 51px;
+}
+
+.newsletter input {
+    width: 345px;
+    font-size: 12px;
+    line-height: 48px;
+    padding-left: 30px;
+    margin-right: -5px;
+}
+
+.newsletter button {
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 55px;
+    color: #fff;
+    padding: 0 44px;
+    border: none;
+    background: #7beec7;
 }
 /* ==========================================================================
    Helper classes

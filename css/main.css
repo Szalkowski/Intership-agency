@@ -145,6 +145,7 @@ a {
 }
 
 .header-bg {
+    position: relative;
     height: 850px;
     opacity: 0.4;
     background: url(../img/landscape-hp.png) 50% 50% no-repeat;
@@ -183,7 +184,49 @@ a {
     text-align: center;
 }
 
+.history {
+    position: relative;
+}
 
+.subtitle {
+    position: absolute;
+    right: 310px;
+    bottom: 270px;
+    z-index: 9;
+}
+
+.subtitle:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 67px;
+    height: 20px;
+    background-color: #7beec7;
+    z-index: -1;
+}
+
+.our-history {
+    position: absolute;
+    bottom: 100px;
+    right: 80px;
+    width: 550px;
+}
+.history a {
+    position: absolute;
+    right: 80px;
+    bottom: -25px;
+    width: 165px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    background: #7beec7;
+}
+
+.header-hp img {
+    position: absolute;
+    bottom: -100px;
+    left: 30px;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */

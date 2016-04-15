@@ -109,6 +109,7 @@ p {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
+    color: #60606e;
 }
 
 h1,
@@ -119,6 +120,7 @@ h3 {
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+    color: #60606e;
 }
 
  h2 {
@@ -129,17 +131,57 @@ h3 {
     font-size: 18px;
 }
 
-.company-name {
-    font-size: 40px;
+ul {
+    list-style-type: none;
+    text-transform: uppercase;
 }
 
+a {
+    text-decoration: none;
+}
 
+.header {
+    position: relative;
+}
 
+.header-bg {
+    height: 850px;
+    opacity: 0.4;
+    background: url(../img/landscape-hp.png) 50% 50% no-repeat;
+    background-size: cover;
+    -webkit-filter: grayscale(100%);
+}
 
+.hero {
+    position: absolute;
+    top: 255px;
+    left: calc(50% - 280px);
+    width: 555px;
+}
 
+.company-name {
 
+    line-height: 100px;
+    text-align: center;
+    border: 10px solid #60606e;
+}
 
+.company-name:before {
+    content: "we're";
+    position: absolute;
+    bottom: 120px;
+    left: calc(50% - 47px);
+    width: 100px;
+    line-height: 30px;
+    font-size: 18px;
+    background: #7beec7;
+}
 
+.description {
+    position: absolute;
+    padding-top: 30px;
+    text-align: center;
+}
 
 
 /* ==========================================================================

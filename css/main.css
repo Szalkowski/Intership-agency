@@ -133,11 +133,19 @@ h3 {
 
 ul {
     list-style-type: none;
+    padding: 0;
     text-transform: uppercase;
 }
 
 a {
     text-decoration: none;
+}
+
+.serv-icon {
+    font-size: 48px;
+    color: #60606e;
+
+  /* header */
 }
 
 .header {
@@ -178,7 +186,7 @@ a {
     background: #7beec7;
 }
 
-.description {
+.hero .description {
     position: absolute;
     padding-top: 30px;
     text-align: center;
@@ -186,6 +194,7 @@ a {
 
 .history {
     position: relative;
+    z-index: 99;
 }
 
 .subtitle {
@@ -222,10 +231,83 @@ a {
     background: #7beec7;
 }
 
-.header-hp img {
-    position: absolute;
+.header-hp img{
+   position: absolute;
     bottom: -100px;
-    left: 30px;
+    left: 80px;
+}
+
+/* main content */
+
+.content {
+    position: relative;
+}
+
+.why-us {
+    position: relative;
+    width: 300px;
+    margin: 250px auto 0;
+    text-align: center;
+}
+
+.why-us:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    width: 70px;
+    height: 20px;
+    background-color: #7beec7;
+    z-index: -1;
+}
+
+.content .description {
+    width: 730px;
+    padding-top: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title {
+    padding-bottom: 80px;
+}
+.services {
+    float: left;
+    width: 700px;
+    padding-left: 80px;
+}
+
+.service {
+    float: left;
+    padding-right: 40px;
+}
+
+.service ul {
+    padding-top: 10px;
+}
+
+.service ul li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    color: #999;
+}
+
+.service h3,
+.service ul {
+    padding-left: 20px;
+}
+.service ul li:nth-last-child(1) {
+    padding-bottom: 20px;
+}
+
+.reasons img {
+    float: right;
+    margin-right: 80px;
+}
+
+.portfolio {
+    clear: both;
 }
 /* ==========================================================================
    Helper classes

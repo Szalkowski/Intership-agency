@@ -466,19 +466,48 @@ a {
     color: #999999;
 }
 
-.newsletter form {
+.newsletter fieldset {
+    width: 491px;
+    margin-top: 17px;
+    position: relative;
+    border: 1px solid #000;
+}
+
+.newsletter legend {
     position: absolute;
-    bottom: 17px;
+    top: 17px;
+    text-transform: uppercase;
+    transition: .3s;
 }
 
 .newsletter input {
+    float: left;
     width: 355px;
-    font-size: 12px;
+    font-size: 18px;
     line-height: 48px;
-    padding-left: 14px;
-    margin-right: -5px;
+    border: none;
 }
 
+.newsletter input:hover + legend {
+    position: relative;
+    top: -8px;
+    height: 0;
+    font-size: 10px;
+    color: #7beec7;
+    transition: .3s;
+}
+
+.newsletter legend:hover {
+    position: relative;
+    top: -8px;
+    height: 0;
+    font-size: 10px;
+    color: #7beec7;
+    transition: .3s;
+}
+.newsletter input:focus {
+    outline: none;
+}
 .newsletter button {
     font-size: 14px;
     text-transform: uppercase;

@@ -476,6 +476,7 @@ a {
 .newsletter legend {
     position: absolute;
     top: 17px;
+    left: 8px;
     text-transform: uppercase;
     transition: all .3s;
 }
@@ -488,23 +489,17 @@ a {
     border: none;
 }
 
-.newsletter input:hover + legend {
+.newsletter input:hover + legend,
+.newsletter legend:hover {
     position: relative;
     top: -8px;
+    left: 0;
     height: 0;
     font-size: 10px;
     color: #7beec7;
     transition: all .3s;
 }
 
-.newsletter legend:hover {
-    position: relative;
-    top: -8px;
-    height: 0;
-    font-size: 10px;
-    color: #7beec7;
-    transition: all .3s;
-}
 .newsletter input:focus {
     outline: none;
 }
@@ -518,32 +513,49 @@ a {
     background: #7beec7;
 }
 
-.map li {
+.map .link {
     display: inline-block;
     float: left;
     font-size: 14px;
     line-height: 48px;
 }
+
+.map .link:nth-of-type(1) {
+    margin-left: 60px;
+}
+
 .map a {
     color: #9a9a9a;
 }
 
-.map a:hover{
-    padding-top: 10px;
-    border-top: 1px solid #9a9a9a;
-    transition: all .3s
-}
 .map {
+    position: relative;
     padding-top: 14px;
 }
-.map li::before {
+
+.map a::after {
+    content: '';
+    display: block;
+    width: 0;
+}
+
+.map a:hover::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 15px;
+    width: 30px;
+    margin-left: 36px;
+    border-top: 1px solid gray;
+    transition: width .3s;
+}
+.map .link::before {
     content: "-";
     padding: 0 16px;
 }
 
-.map li:nth-of-type(1)::before {
+.map .link:nth-of-type(1)::before {
     content: "";
-    padding-left: 60px;
 }
 
 .copyrights {

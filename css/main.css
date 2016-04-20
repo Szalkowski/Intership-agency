@@ -168,19 +168,32 @@ a {
     width: 555px;
 }
 
+.words {
+    position: relative;
+}
 .company-name {
+    position: absolute;
+    width: 555px;
     font-family: 'Myriad Pro', sans-serif;
     font-weight: normal;
     font-size: 48px;
     line-height: 80px;
     text-align: center;
     border: 10px solid #60606e;
+    opacity: 0;
 }
+
+.visible {
+    opacity: 1;
+    animation-name: slide-show;
+    animation-duration: 3s;
+}
+
 
 .company-name:before {
     content: "we're";
     position: absolute;
-    bottom: 99px;
+    bottom: 90px;
     left: calc(50% - 51px);
     width: 100px;
     font-family: 'Montserrat', sans-serif;
@@ -192,8 +205,9 @@ a {
 
 .hero .description {
     position: absolute;
-    padding-top: 25px;
+    padding-top: 125px;
     text-align: center;
+    opacity: 0;
 }
 
 .history {
@@ -574,10 +588,25 @@ a {
     line-height: 38px;
     margin-bottom: 48px;
 }
+
 .media-icon {
     padding-left: 2px;
     font-size: 18px;
     color: #999999;
+}
+
+@keyframes slide-show{
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 /* ==========================================================================
    Helper classes

@@ -157,7 +157,7 @@ a {
 
 .header-bg {
     position: relative;
-    height: 85vh;
+    height: 850px;
     opacity: 0.4;
     background: url(../img/landscape-hp.png) 50% 50% no-repeat;
     background-size: cover;
@@ -269,7 +269,7 @@ a {
     background: #7beec7;
 }
 
-.header .desk-img{
+.header .desk-img {
     position: absolute;
     top: 551px;
     left: 80px;
@@ -421,6 +421,9 @@ a {
     padding-bottom: 37px;
 }
 
+.category a {
+    color: #60606e;
+}
 .category {
     padding-left: 20px;
     line-height: 40px;
@@ -436,17 +439,6 @@ a {
     font-weight: 700;
 }
 
-.portfolio-images button {
-    position: absolute;
-    top: 54%;
-    left: 25%;
-    display: block;
-    padding: 10px 20px;
-    line-height: 10px;
-    color: #fff;
-    border: none;
-    background: #7beec7;
-}
 .img {
     position: absolute;
     right: 80px;

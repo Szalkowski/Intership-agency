@@ -1,0 +1,226 @@
+.header-bg {
+    width: 100vw;
+    height: 80vh;
+}
+.header .desk-img {
+    display: none;
+}
+.company-name {
+    border: 4px solid #60606e;
+}
+.company-name:before {
+    transform: scale(.4);
+    bottom: 23px;
+}
+.hero .description {
+    padding-top: 40px;
+}
+
+.history .subtitle {
+    right: calc(50% - 85px);
+}
+.history .subtitle::after {
+    width: 40px;
+}
+.hero {
+    top: 25%;
+    left: calc(50% - 85px);
+}
+
+
+
+
+@media screen and (max-width: 640px) {
+    .subtitle,
+    .header i,
+    .akad {
+    font-size: 1em;
+}
+    .header .desk-img {
+        display: none;
+    }
+    .company-name {
+        width: 160px;
+        font-size: 1.2em;
+        border: 4px solid #60606e;
+    }
+    .hero .description {
+        width: 160px;
+        padding-top: 40px;
+        font-size: .75em;
+        line-height: 1.25em;
+    }
+
+    .history .subtitle {
+        bottom: 165px;
+    }
+    .our-history {
+        bottom: 20px;
+        left: 7.5%;
+        width: 85%;
+        font-size: .75em;
+        line-height: 1.25em;
+    }
+    .header-hp a {
+        bottom: -10px;
+        right: 45px;
+        width: 80px;
+        font-size: .75em;
+        line-height: 20px;
+    }
+    .title {
+        padding-bottom: 0;
+    }
+    .title .subtitle {
+        bottom: 0;
+        right: 0;
+        margin: 40px auto 0;
+    }
+    .title .subtitle::after {
+        width: 38px;
+        left: 60px;
+    }
+    .content .description {
+        width: 85%;
+        margin: 0 auto;
+        font-size: .75em;
+        line-height: 1.25em;
+    }
+    .service {
+        clear: both;
+        float: none;
+    }
+    .service i,
+    .service h3 {
+        font-size: 1em;
+    }
+    .service ul li {
+        font-size: .75em;
+        line-height: 2.5em;
+    }
+    .services .service:nth-last-child(1) {
+        padding: 0;
+    }
+    .service ul li:nth-last-child(1) {
+        padding-bottom: 20px;
+    }
+    .chair-photo {
+        width: 100%;
+        height: 290px;
+        margin-right: 0;
+    }
+    .img {
+        display: none;
+    }
+    .portfolio {
+        padding-top: 35px;
+        height: 240px;
+    }
+    .portfolio .subtitle {
+        right: 0;
+        bottom: 0;
+    }
+    .portfolio .subtitle::after {
+        left: 61px;
+        width: 37px;
+    }
+    .portfolio p {
+        width: 85%;
+        padding: 12px 0 36px;
+        margin: 0 auto;
+        font-size: .75em;
+        line-height: 1.25em
+    }
+    .category-title {
+        padding-bottom: 12px;
+        font-size: 1em;
+    }
+    .category {
+        font-size: .75em;
+        line-height: 2.5em;
+    }
+    .contact {
+        width: 100%;
+        height: 340px;
+        padding: 0;
+    }
+    .contact h2 {
+        clear: both;
+        float: none;
+        width: 85%;
+        padding: 25px 0;
+        margin: 0 auto;
+        font-size: 1em;
+    }
+    .contact a {
+        top: 50px;
+        left: 180px;
+        width: 128px;
+        font-size: .75em;
+        line-height: 35px;
+    }
+    .newsletter {
+        width: 100%;
+        padding: 0;
+        font-size: 1em;
+    }
+    .newsletter h3 {
+        width: 85%;
+        margin: 0 auto;
+        padding: 10px 0 0;
+        font-size: 1em;
+    }
+    .newsletter p {
+        width: 85%;
+        margin: 0 auto;
+        line-height: 1.25em;
+        font-size: .75em;
+    }
+    .newsletter fieldset {
+        width: 85%;
+        margin: 17px auto 0;
+    }
+    .newsletter input {
+        width: 70%;
+    }
+    .newsletter legend {
+        font-size: .75em;
+    }
+    .newsletter button {
+        width: 30%;
+        padding: 0;
+        text-align: center;
+        line-height: 50px;
+    }
+    .map {
+        width: 85%;
+        margin: 0 auto;
+    }
+    .map .link:nth-of-type(1) {
+        padding: 0;
+        margin: 0;
+    }
+    .map .link:nth-of-type(1)::before {
+    content: "-";
+}
+    .map .link {
+        float: none;
+        width: 49%;
+        font-size: .75em;
+        line-height: 40px;
+    }
+    .copyrights {
+        width: 85%;
+        margin: 15px auto;
+        padding: 0;
+        float: none;
+        font-size: .75em;
+        line-height: 1.25em;
+    }
+    .social-medias {
+        float: none;
+        text-align: center;
+        padding: 0 0 20px;
+
+    }
+}

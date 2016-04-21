@@ -96,6 +96,9 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+/* typography */
+
 body {
     margin: 0;
     padding: 0;
@@ -123,7 +126,7 @@ h3 {
     color: #60606e;
 }
 
- h2 {
+h2 {
     font-size: 30px;
  }
 
@@ -144,9 +147,9 @@ a {
 .serv-icon {
     font-size: 31px;
     color: #60606e;
+}
 
   /* header */
-}
 
 .header {
     position: relative;
@@ -154,46 +157,56 @@ a {
 
 .header-bg {
     position: relative;
-    height: 850px;
+    height: 85vh;
     opacity: 0.4;
     background: url(../img/landscape-hp.png) 50% 50% no-repeat;
     background-size: cover;
     -webkit-filter: grayscale(100%);
 }
 
-.hero {
+.header i {
     position: absolute;
-    top: 255px;
-    left: calc(50% - 276px);
-    width: 555px;
+    top: 4%;
+    right: 6%;
+    font-size: 2rem;
+    color: #60606e;
 }
 
-.words {
-    position: relative;
+.akad {
+    position: absolute;
+    display: block;
+    top: 4.5%;
+    left: 6%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #60606e;
 }
+
+.hero {
+    position: absolute;
+    top: 30%;
+    left: calc(50% - 21vw);
+    width: 41vw;
+}
+
 .company-name {
     position: absolute;
-    width: 555px;
+    width: 100%;
     font-family: 'Myriad Pro', sans-serif;
     font-weight: normal;
-    font-size: 48px;
-    line-height: 80px;
+    font-size: 3.3rem;
+    line-height: 1.5em;
     text-align: center;
     border: 10px solid #60606e;
     opacity: 0;
 }
 
-.visible {
-    opacity: 1;
-    animation-name: slide-show;
-    animation-duration: 3s;
-}
-
-
 .company-name:before {
     content: "we're";
     position: absolute;
-    bottom: 90px;
+    bottom: 89px;
     left: calc(50% - 51px);
     width: 100px;
     font-family: 'Montserrat', sans-serif;
@@ -210,19 +223,24 @@ a {
     opacity: 0;
 }
 
+.hero .visible {
+    opacity: 1;
+    animation-name: slide-show;
+    animation-duration: 3s;
+}
+
 .history {
     position: relative;
-    z-index: 99;
 }
 
-.subtitle {
+.history .subtitle {
     position: absolute;
-    right: 310px;
-    bottom: 240px;
-    z-index: 9;
+    right: 312px;
+    bottom: 234px;
+    z-index: 9999;
 }
 
-.subtitle:after {
+.history .subtitle::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -234,11 +252,12 @@ a {
 
 .our-history {
     position: absolute;
-    bottom: 50px;
+    bottom: 44px;
     right: 85px;
     width: 550px;
     line-height: 30px;
 }
+
 .header-hp a {
     position: absolute;
     right: 80px;
@@ -250,10 +269,15 @@ a {
     background: #7beec7;
 }
 
-.header-hp img{
-   position: absolute;
-    bottom: -100px;
+.header .desk-img{
+    position: absolute;
+    top: 551px;
     left: 80px;
+    display: block;
+    width: 458px;
+    height: 400px;
+    background: url(../img/desk.png) 50% 50% no-repeat;
+    background-size: 100% 100%;
 }
 
 /* main content */
@@ -262,14 +286,16 @@ a {
     position: relative;
 }
 
-.why-us {
+.title .subtitle {
     position: relative;
+    right: 0;
+    bottom: 0;
     width: 263px;
     margin: 240px auto 0;
     text-align: center;
 }
 
-.why-us:after {
+.title .subtitle::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -289,7 +315,7 @@ a {
 }
 
 .title {
-    padding: 0 0 94px;
+    padding-bottom: 94px;
 }
 .services {
     float: left;
@@ -310,6 +336,11 @@ a {
 .service h3 {
     padding-top: 6px;
 }
+
+.service a {
+    color: #999;
+}
+
 .service ul {
     padding-top: 10px;
 }
@@ -318,16 +349,28 @@ a {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 30px;
-    color: #999;
 }
 
 .service ul li:nth-last-child(1) {
     padding-bottom: 47px;
 }
 
-.reasons img {
+.services .service:nth-last-child(1) {
+    padding: 4px 0 0 17px;
+}
+
+.services .service:nth-last-child(1) li {
+    padding-left: 0;
+}
+
+.chair-photo {
+    display: block;
     float: right;
+    width: 457px;
+    height: 500px;
     margin-right: 80px;
+    background: url(../img/chair.png) 50% 50% no-repeat;
+    background-size: 100% 100%;
 }
 
 /* portfolio */
@@ -339,14 +382,16 @@ a {
     height: 1120px;
 }
 
-.title-portfolio {
+.portfolio .subtitle {
     position: relative;
+    right: 0;
+    bottom: 0;
     text-align: center;
     width: 260px;
     margin: 0 auto;
 }
 
-.title-portfolio:after {
+.portfolio .subtitle:after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -356,6 +401,7 @@ a {
     background-color: #7beec7;
     z-index: -1;
 }
+
 .portfolio p {
     width: 812px;
     padding: 12px 0 98px;
@@ -368,6 +414,7 @@ a {
     float: left;
     padding-left: 80px;
 }
+
 .category-title {
     margin-top: -22px;
     width: 200px;
@@ -447,6 +494,7 @@ a {
     width: 500px;
     color: #fff;
 }
+
 .contact a {
     position: absolute;
     top: 151px;
@@ -459,6 +507,7 @@ a {
     color: #7beec7;
     background: #fff;
 }
+
 .newsletter {
     position: relative;
     float: right;
@@ -476,6 +525,7 @@ a {
 .newsletter p {
     padding: 8px 0;
 }
+
 .news-info {
     color: #999999;
 }

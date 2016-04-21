@@ -1,7 +1,7 @@
 $(function() {
-    $('.words h1:first, .words p:first').addClass('visible');
-    var lis = $(".words > h1"),
-        desc = $(".words > p"),
+    $('.hero h1:first, .hero p:first').addClass('visible');
+    var lis = $(".hero > h1"),
+        desc = $(".hero > p"),
         currentSlide = 0;
 
     setInterval(function() {

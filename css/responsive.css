@@ -85,7 +85,7 @@
     margin: 10px auto 60px;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 700px) {
     .subtitle,
     .header i,
     .akad {
@@ -93,6 +93,9 @@
 }
     .header .desk-img {
         display: none;
+    }
+    .hero {
+        left: 25%;
     }
     .company-name {
         width: 160px;
@@ -149,9 +152,16 @@
         font-size: .75em;
         line-height: 1.25em;
     }
+    .services {
+        width: 100%;
+        padding: 0;
+    }
     .service {
         clear: both;
         float: none;
+        width: 209px;
+        margin: 0 auto;
+        padding: 0;
     }
     .service i,
     .service h3 {
@@ -194,7 +204,15 @@
     .img {
     display: none;
     }
+    .categories {
+        float: none;
+        clear: both;
+        width: 130px;
+        padding: 0;
+        margin: 0 auto;
+    }
     .category-title {
+        width: 100px;
         padding-bottom: 12px;
         font-size: 1em;
     }
@@ -286,5 +304,61 @@
         text-align: center;
         padding: 0 0 20px;
 
+    }
+}
+@media screen and (max-width: 900px) and (orientation:landscape) {
+    .header-bg {
+        height: 100vh;
+    }
+    .hero {
+        left: 32%;
+    }
+    .company-name {
+        width: 220px;
+    }
+    .hero .description {
+    width: 230px;
+    }
+    .history .subtitle {
+        bottom: 104px;
+        right: 37%;
+     }
+     .title .subtitle {
+        right: 0;
+        bottom: 0;
+     }
+     .services {
+        float: none;
+        width: 85%;
+        margin: 0 auto;
+        padding: 0;
+     }
+     .service {
+        clear: none;
+        float: left;
+        padding: 20px 35px 0 0;
+    }
+    .services .service:nth-last-child(1) {
+        padding: 20px 0 0;
+    }
+    .portfolio {
+        height: 280px;
+    }
+    .portfolio .subtitle {
+        right: 0;
+        bottom: 0;
+    }
+    .categories {
+        float: left;
+        clear: none;
+        padding: 0 0 0 13%;
+    }
+    .img {
+        display: block;
+        right: -40%;
+        transform: scale(.3);
+    }
+    .map .link {
+        width: 32%;
     }
 }

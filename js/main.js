@@ -9,4 +9,10 @@ $(function() {
         lis.removeClass('visible').eq(currentSlide).addClass('visible');
         desc.removeClass('visible').eq(currentSlide).addClass('visible');
     }, 3000);
+
+    $('.map-wrap').easyGoogleMaps({
+    lat: 1.276816,
+    lng: 103.848346,
+    zoom: 13
+  });
 });

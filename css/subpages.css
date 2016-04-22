@@ -27,6 +27,7 @@
     margin: 0 auto;
 }
 .contact-form {
+    float: left;
     width: 45%;
     margin-top: 150px;
 }
@@ -75,8 +76,8 @@
 
 .contact-info {
     width: 47%;
-    margin-top: 100px;
-
+    margin: 100px 0;
+    clear: both;
 }
 
 .contact-info p {
@@ -99,4 +100,11 @@
     padding: 0;
     margin: 0;
     float: left;
+}
+
+.google-map {
+    float: left;
+    width: 48%;
+    height: 604px;
+    margin: 150px 0 0 5%;
 }

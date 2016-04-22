@@ -566,12 +566,12 @@ a {
 
 .footer {
     position: relative;
-    margin-top: 124px;
+    margin-top: 190px;
 }
 
 .contact {
     position: relative;
-    height: 363px;
+    height: 332px;
     background: #7beec7;
     padding: 44px 80px 0;
 }
@@ -599,7 +599,7 @@ a {
     position: relative;
     float: right;
     width: 553px;
-    height: 260px;
+    height: 235px;
     padding: 19px 21px;
     background: #fff;
 }

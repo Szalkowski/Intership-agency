@@ -1,13 +1,21 @@
-.header-bg {
+.header-bg,
+.header-bg-subpage {
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
 }
 .header .desk-img {
     display: none;
 }
 .hero {
-    top: 25%;
+    top: calc(50% - 80px);
     left: 29%;
+}
+.hero-subpage {
+    top: 45%;
+    left: calc(50% - 107px);
+}
+.title-header-subpage {
+    font-size: 2em;
 }
 .company-name {
     font-size: 2em;
@@ -36,7 +44,7 @@
 }
 .chair-photo {
     width: 100%;
-    height: 55vh;
+    height: 85vh;
     margin-right: 0;
 }
 .portfolio {
@@ -84,18 +92,48 @@
     padding: 0;
     margin: 10px auto 60px;
 }
+.contact-info {
+    clear: both;
+    float: none;
+    width: 100%;
+}
+.contact-form {
+    width: 100%;
+    margin-top: 50px;
+}
+.contact-form .name {
+    clear: both;
+    float: none;
+    width: 100%;
+}
+.contact-form .email {
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-top: 20px;
+}
+.google-map {
+    position: relative;
+    clear: both;
+    float: none;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+}
 
 @media screen and (max-width: 700px) {
     .subtitle,
     .header i,
     .akad {
     font-size: 1em;
-}
+    }
     .header .desk-img {
         display: none;
     }
     .hero {
-        left: 25%;
+        top: 25%;
+        left: calc(50% - 80px);
     }
     .company-name {
         width: 160px;
@@ -105,7 +143,7 @@
     .company-name:before {
     transform: scale(.4);
     bottom: 23px;
-}
+    }
     .hero .description {
         width: 160px;
         padding-top: 40px;
@@ -114,8 +152,8 @@
     }
 
     .history .subtitle {
-        bottom: 165px;
-        right: 26%;
+        bottom: 30vh;
+        right: calc(50% - 86px);
     }
     .history .subtitle::after {
         width: 36px;
@@ -305,23 +343,85 @@
         padding: 0 0 20px;
 
     }
+    .contact-info {
+        clear: both;
+        float: none;
+        width: 100%;
+    }
+    .contact-form {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .contact-form .name {
+        clear: both;
+        float: none;
+        width: 100%;
+    }
+    .contact-form .email {
+        clear: both;
+        float: none;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .google-map {
+        position: relative;
+        clear: both;
+        float: none;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        height: 415px;
+        margin: 0;
+    }
+    .footer-sb {
+        margin-top: 120px;
+    }
+}
+@media screen and (max-width: 960px) and (orientation:landscape) {
+    .hero {
+        left: calc(50% - 150px);
+    }
+    .company-name {
+        width: 300px;
+    }
+    .hero .description {
+        width: 300px;
+
+    }
+    .history .subtitle {
+        bottom: 90px;
+        right: calc(50% - 161.5px);
+     }
+    .our-history {
+        bottom: 20px;
+        left: 7.5%;
+        width: 85%;
+        font-size: .75em;
+        line-height: 1.25em;
+    }
+    .title .subtitle {
+        right: 0;
+        bottom: 0;
+     }
+     .portfolio .subtitle {
+        right: 0;
+        bottom: 0;
+    }
+    .google-map {
+        position: absolute;
+    }
 }
 @media screen and (max-width: 900px) and (orientation:landscape) {
     .header-bg {
         height: 100vh;
     }
     .hero {
-        left: 32%;
-    }
-    .company-name {
-        width: 220px;
-    }
-    .hero .description {
-    width: 230px;
+        left: calc(50% - 150px);
     }
     .history .subtitle {
-        bottom: 104px;
-        right: 37%;
+        bottom: 90px;
+        right: calc(50% - 86px);
+        font-size: 1em;
      }
      .title .subtitle {
         right: 0;
@@ -360,5 +460,34 @@
     }
     .map .link {
         width: 32%;
+    }
+    .contact-info {
+        clear: both;
+        float: none;
+        width: 100%;
+    }
+    .contact-form {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .contact-form .name {
+        clear: both;
+        float: none;
+        width: 100%;
+    }
+    .contact-form .email {
+        clear: both;
+        float: none;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .google-map {
+        position: relative;
+        float: none;
+        clear: both;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        margin: 0;
     }
 }

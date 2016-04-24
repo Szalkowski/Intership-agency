@@ -64,6 +64,7 @@
 .contact-form .message::-webkit-input-placeholder {
     line-height: 45px;
     padding-left: 20px;
+    font-size: 12px;
 }
 .contact-form button {
     padding: 0 53px;

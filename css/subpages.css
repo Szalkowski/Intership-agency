@@ -163,7 +163,7 @@
 
 .benefits {
     position: relative;
-    height: 770px;
+    height: 610px;
     margin-top: 50px;
 }
 
@@ -173,7 +173,7 @@
     bottom: auto;
 }
 
-.benefit-sub-desc {
+.about-desc {
     width: 719px;
     padding-top: 100px;
     margin: 0 auto;
@@ -196,5 +196,78 @@
 }
 .team {
     position: relative;
+    height: 800px;
+}
 
+.team-subtitle {
+    top: 20px;
+    left: calc(50% - 140px);
+    bottom: auto;
+}
+
+.team-photos {
+    position: absolute;
+}
+
+.team-photo {
+    float: left;
+    margin: 20px 23px 0 0;
+}
+
+.team-photo1 {
+    width: 263px;
+    height: 333px;
+    background: url(../img/oldman.png);
+}
+
+.team-photo2 {
+    width: 263px;
+    height: 333px;
+    background: url(../img/woman.png);
+}
+
+.team-photo3 {
+    width: 263px;
+    height: 333px;
+    background: url(../img/boy1.png);
+}
+
+.team-photo4 {
+    width: 263px;
+    height: 333px;
+    background: url(../img/woman2.png);
+}
+
+.team-photo5 {
+    width: 263px;
+    height: 333px;
+    background: url(../img/boy2.png);
+}
+
+.team-photo6 {
+    width: 263px;
+    height: 333px;
+    background: url(../img/boy3.png);
+}
+
+.team-photo7 {
+    width: 263px;
+    height: 333px;
+    background: url(../img/boy4.png);
+}
+
+.team-photo8 {
+    width: 263px;
+    height: 333px;
+    background: url(../img/boy5.png);
+}
+
+.bar {
+    position: relative;
+    margin-top: 770px;
+}
+
+.test-clients {
+    position: relative;
+    margin-top: 300px;
 }

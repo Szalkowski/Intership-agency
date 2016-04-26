@@ -22,11 +22,14 @@
     line-height: 48px;
     text-transform: uppercase;
 }
+
 .subpage {
     position: relative;
     width: 85%;
     margin: 0 auto;
 }
+
+/* Contact page */
 .contact-form {
     float: left;
     width: 45%;
@@ -120,4 +123,78 @@
 
 .about {
     position: relative;
+}
+
+/* About Us page */
+
+.desc {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+}
+.texts {
+    margin: 220px auto 0;
+    width: 85%;
+    height: 290px;
+}
+
+.about {
+    position: relative;
+    float: left;
+    width: 45%;
+    margin-right: 10%;
+}
+
+.texts .subtitle {
+    top: -50px;
+    width: 100%;
+    right: 0;
+}
+
+.short-desc {
+    padding-bottom: 30px;
+}
+.what-we-do {
+    position: relative;
+    float: left;
+    width: 45%;
+}
+
+.benefits {
+    position: relative;
+    height: 770px;
+    margin-top: 50px;
+}
+
+.benefits .subtitle {
+    top: 50px;
+    left: calc(50% - 125px);
+    bottom: auto;
+}
+
+.benefit-sub-desc {
+    width: 719px;
+    padding-top: 100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.benefits ul {
+    text-transform: none;
+    margin-top: 50px;
+}
+
+.benefit {
+    float: left;
+    width: 370px;
+    margin-right: 12px;
+}
+
+.benefit-desc {
+    margin-bottom: 70px;
+}
+.team {
+    position: relative;
+
 }

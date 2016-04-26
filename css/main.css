@@ -247,10 +247,7 @@ a {
     z-index: 9999;
 }
 
-.history .subtitle::after,
-.title .subtitle::after,
-.portfolio .subtitle:after,
-.about-us:after {
+.subtitle::after {
     content: "";
     position: absolute;
     left: 0;

@@ -183,8 +183,13 @@
     text-align: center;
 }
 
-.benefits ul {
+.benefits {
     width: 85%;
+    margin: 50px auto 0;
+}
+
+.benefits ul {
+    width: 100%;
     text-transform: none;
     margin: 50px auto 0;
 }
@@ -192,7 +197,7 @@
 .benefit {
     float: left;
     width: 370px;
-    margin-right: 12px;
+    margin-right: 6.4%;
 }
 
 .benefit-desc {
@@ -202,7 +207,7 @@
 .team {
     position: relative;
     width: 70%;
-    height: 800px;
+    height: 1000px;
     margin: 50px auto 0;
 }
 
@@ -289,9 +294,72 @@
 .bar {
     position: relative;
     margin-top: 770px;
+    height: 150px;
+    width: 100%;
+    background: #efeff0;
 }
 
-.test-clients {
-    position: relative;
-    margin-top: 300px;
+.bar-desc {
+    float: left;
+    line-height: 150px;
+    padding-left: 50px;
 }
+
+.bar .button {
+    position: absolute;
+    right: 0;
+    top: 50px;
+}
+.testimonials {
+    position: relative;
+    width: 35%;
+    margin-top: 300px;
+    text-align: center;
+}
+
+.test-photo {
+    width: 85px;
+    height: 85px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: url(../img/photo.png);
+}
+
+.testimonials .button {
+    position: absolute;
+    bottom: -70px;
+    left: calc(50% - 85px);
+}
+
+.clients {
+    width: 35%;
+    margin-top: -200px;
+    float: right;
+}
+
+.clients li {
+    float: left;
+    width: 165px;
+    height: 100px;
+    margin: 10px 10px 0 0;
+    border: 1px solid #d9d9d9;
+}
+.client1 {
+    background: url(../img/archery.png) 50% 50% no-repeat;
+}
+.client2 {
+    background: url(../img/pacificana.png) 50% 50% no-repeat;
+}
+.client3 {
+    background: url(../img/merchant.png) 50% 50% no-repeat;
+}
+.client4 {
+    background: url(../img/atelier.png) 50% 50% no-repeat;
+}
+.client5 {
+    background: url(../img/steakhouse.png) 50% 50% no-repeat;
+}
+.client6 {
+    background: url(../img/watson.png) 50% 50% no-repeat;
+}
+

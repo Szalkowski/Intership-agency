@@ -541,6 +541,8 @@ a {
 
 .footer {
     position: relative;
+    float: none;
+    clear: both;
     margin-top: 190px;
 }
 

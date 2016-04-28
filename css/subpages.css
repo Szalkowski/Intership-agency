@@ -7,7 +7,7 @@
 .hero-subpage {
     position: absolute;
     top: 51%;
-    left: 41%;
+    left: calc(50% - 150px);
     text-align: center;
 }
 .title-header-subpage {
@@ -145,32 +145,35 @@
     width: 45%;
     margin-right: 10%;
 }
-
-.texts .subtitle {
-    top: -50px;
-    width: 100%;
-    right: 0;
+.about-us {
+    position: relative;
 }
 
 .short-desc {
     padding-bottom: 30px;
 }
+
 .what-we-do {
     position: relative;
     float: left;
     width: 45%;
 }
 
-.benefits {
+.what-we-do-sub {
     position: relative;
-    height: 610px;
-    margin-top: 50px;
 }
 
-.benefits .subtitle {
-    top: 50px;
-    left: calc(50% - 125px);
-    bottom: auto;
+.benefits {
+    position: relative;
+    width: 85%;
+    height: 610px;
+    margin: 50px auto 0;
+}
+
+.benefit-sub {
+    position: relative;
+    width: 250px;
+    margin: 0 auto;
 }
 
 .about-desc {
@@ -181,8 +184,9 @@
 }
 
 .benefits ul {
+    width: 85%;
     text-transform: none;
-    margin-top: 50px;
+    margin: 50px auto 0;
 }
 
 .benefit {
@@ -194,15 +198,18 @@
 .benefit-desc {
     margin-bottom: 70px;
 }
+
 .team {
     position: relative;
+    width: 70%;
     height: 800px;
+    margin: 50px auto 0;
 }
 
 .team-subtitle {
-    top: 20px;
-    left: calc(50% - 140px);
-    bottom: auto;
+    position: relative;
+    width: 281px;
+    margin: 0 auto;
 }
 
 .team-photos {
@@ -210,8 +217,8 @@
 }
 
 .team-photo {
-    float: left;
-    margin: 20px 23px 0 0;
+    position: absolute;
+    margin-top: 20px;
 }
 
 .team-photo1 {
@@ -221,44 +228,61 @@
 }
 
 .team-photo2 {
+    left: 283px;
     width: 263px;
     height: 333px;
     background: url(../img/woman.png);
 }
 
 .team-photo3 {
+    left: 566px;
     width: 263px;
     height: 333px;
     background: url(../img/boy1.png);
 }
 
 .team-photo4 {
-    width: 263px;
+    position: absolute;
+    left: 819px;
+    width: 293px;
     height: 333px;
+    clip: rect(0px, 293px, 333px, 0px);
     background: url(../img/woman2.png);
 }
 
 .team-photo5 {
-    width: 263px;
+    top: 353px;
+    left: -72px;
+    width: 336px;
     height: 333px;
+    clip: rect(0px, 336px, 333px, 72px);
     background: url(../img/boy2.png);
 }
 
 .team-photo6 {
-    width: 263px;
+    top: 353px;
+    left: 211px;
+    width: 336px;
     height: 333px;
+    clip: rect(0px, 336px, 333px, 72px);
     background: url(../img/boy3.png);
 }
 
 .team-photo7 {
-    width: 263px;
+    top: 353px;
+    left: 494px;
+    width: 336px;
     height: 333px;
+    clip: rect(0px, 336px, 333px, 72px);
     background: url(../img/boy4.png);
 }
 
 .team-photo8 {
-    width: 263px;
+    top: 353px;
+    left:777px;
+    width: 336px;
     height: 333px;
+    clip: rect(0px, 336px, 333px, 72px);
     background: url(../img/boy5.png);
 }
 

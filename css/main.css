@@ -240,7 +240,7 @@ a {
     position: relative;
 }
 
-.history .subtitle {
+.history-subtitle {
     position: absolute;
     right: 312px;
     bottom: 234px;
@@ -294,10 +294,8 @@ a {
     position: relative;
 }
 
-.title .subtitle {
+.title-subtitle {
     position: relative;
-    right: 0;
-    bottom: 0;
     width: 263px;
     margin: 240px auto 0;
     text-align: center;
@@ -379,10 +377,8 @@ a {
     height: 1120px;
 }
 
-.portfolio .subtitle {
+.portfolio-subtitle {
     position: relative;
-    right: 0;
-    bottom: 0;
     text-align: center;
     width: 260px;
     margin: 0 auto;

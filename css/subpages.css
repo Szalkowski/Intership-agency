@@ -7,7 +7,7 @@
 .hero-subpage {
     position: absolute;
     top: 51%;
-    left: calc(50% - 150px);
+    left: calc(50% - 99px);
     text-align: center;
 }
 .title-header-subpage {
@@ -25,7 +25,7 @@
 
 .subpage {
     position: relative;
-    width: 85%;
+    width: 88%;
     margin: 0 auto;
 }
 
@@ -134,23 +134,25 @@
     line-height: 30px;
 }
 .texts {
-    margin: 220px auto 0;
-    width: 85%;
+    margin: 141px auto 0;
+    width: 100%;
     height: 290px;
 }
 
 .about {
     position: relative;
     float: left;
-    width: 45%;
-    margin-right: 10%;
+    width: 49%;
+    margin-right: 2%;
 }
 .about-us {
     position: relative;
 }
 
 .short-desc {
-    padding-bottom: 30px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    padding: 14px 0 17px 0;
 }
 
 .what-we-do {
@@ -165,9 +167,9 @@
 
 .benefits {
     position: relative;
-    width: 85%;
+    width: 100%;
     height: 610px;
-    margin: 50px auto 0;
+    margin: 160px auto 0;
 }
 
 .benefit-sub {
@@ -178,35 +180,35 @@
 
 .about-desc {
     width: 719px;
-    padding-top: 100px;
+    padding-top: 10px;
     margin: 0 auto;
+    line-height: 24px;
     text-align: center;
-}
-
-.benefits {
-    width: 85%;
-    margin: 50px auto 0;
 }
 
 .benefits ul {
     width: 100%;
     text-transform: none;
-    margin: 50px auto 0;
+    margin: 106px auto 0;
 }
 
 .benefit {
     float: left;
-    width: 370px;
-    margin-right: 6.4%;
+    width: 357px;
+    height: 187px;
+    margin-right: 34px;
 }
 
+.benefit:nth-of-type(3),
+        :nth-of-type(6){
+    margin-right: 0;
+}
 .benefit-desc {
-    margin-bottom: 70px;
+    margin-top: 18px;
 }
 
 .team {
     position: relative;
-    width: 70%;
     height: 1000px;
     margin: 50px auto 0;
 }
@@ -219,11 +221,12 @@
 
 .team-photos {
     position: absolute;
+    margin-top: 44px;
 }
 
 .team-photo {
     position: absolute;
-    margin-top: 20px;
+    margin-top: 55px;
 }
 
 .team-photo1 {
@@ -233,14 +236,14 @@
 }
 
 .team-photo2 {
-    left: 283px;
+    left: 293px;
     width: 263px;
     height: 333px;
     background: url(../img/woman.png);
 }
 
 .team-photo3 {
-    left: 566px;
+    left: 586px;
     width: 263px;
     height: 333px;
     background: url(../img/boy1.png);
@@ -248,7 +251,7 @@
 
 .team-photo4 {
     position: absolute;
-    left: 819px;
+    left: 848px;
     width: 293px;
     height: 333px;
     clip: rect(0px, 293px, 333px, 0px);
@@ -256,7 +259,7 @@
 }
 
 .team-photo5 {
-    top: 353px;
+    top: 365px;
     left: -72px;
     width: 336px;
     height: 333px;
@@ -265,8 +268,8 @@
 }
 
 .team-photo6 {
-    top: 353px;
-    left: 211px;
+    top: 365px;
+    left: 223px;
     width: 336px;
     height: 333px;
     clip: rect(0px, 336px, 333px, 72px);
@@ -274,8 +277,8 @@
 }
 
 .team-photo7 {
-    top: 353px;
-    left: 494px;
+    top: 365px;
+    left: 519px;
     width: 336px;
     height: 333px;
     clip: rect(0px, 336px, 333px, 72px);
@@ -283,8 +286,8 @@
 }
 
 .team-photo8 {
-    top: 353px;
-    left:777px;
+    top: 365px;
+    left: 811px;
     width: 336px;
     height: 333px;
     clip: rect(0px, 336px, 333px, 72px);
@@ -293,7 +296,7 @@
 
 .bar {
     position: relative;
-    margin-top: 770px;
+    margin-top: 828px;
     height: 150px;
     width: 100%;
     background: #efeff0;
@@ -301,39 +304,44 @@
 
 .bar-desc {
     float: left;
+    font-size: 18px;
+    font-style: italic;
     line-height: 150px;
-    padding-left: 50px;
+    padding-left: 30px;
 }
 
 .bar .button {
     position: absolute;
-    right: 0;
+    right: 42px;
     top: 50px;
+    padding: 0 39px;
 }
 .testimonials {
     position: relative;
-    width: 35%;
-    margin-top: 300px;
+    width: 49%;
+    margin: 230px 0 -5px ;
     text-align: center;
 }
 
 .test-photo {
     width: 85px;
     height: 85px;
-    margin: 0 auto;
+    margin: 0 auto 15px;
     border-radius: 50%;
     background: url(../img/photo.png);
 }
 
 .testimonials .button {
     position: absolute;
-    bottom: -70px;
-    left: calc(50% - 85px);
+    bottom: -49px;
+    left: calc(50% - 49px);
+    padding: 0 8px;
+    line-height: 2em;
 }
 
 .clients {
-    width: 35%;
-    margin-top: -200px;
+    width: 49%;
+    margin-top: -211px;
     float: right;
 }
 
@@ -341,8 +349,13 @@
     float: left;
     width: 165px;
     height: 100px;
-    margin: 10px 10px 0 0;
+    margin: 10px 31px 20px 0;
     border: 1px solid #d9d9d9;
+}
+
+.clients li:nth-of-type(3),
+.clients li:nth-of-type(6) {
+    margin-right: 0;
 }
 .client1 {
     background: url(../img/archery.png) 50% 50% no-repeat;
@@ -351,6 +364,7 @@
     background: url(../img/pacificana.png) 50% 50% no-repeat;
 }
 .client3 {
+
     background: url(../img/merchant.png) 50% 50% no-repeat;
 }
 .client4 {

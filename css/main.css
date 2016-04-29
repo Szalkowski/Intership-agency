@@ -434,7 +434,6 @@ a {
     padding-bottom: 20px;
     overflow: hidden;
     background: #9a9a9a;
-    transition: all .5s;
 }
 .img .portfolio-images:nth-of-type(1)
 {
@@ -503,6 +502,9 @@ a {
     height: 150px;
 }
 
+.img .portfolio-images:hover {
+    text-indent: -9999999px;
+}
 .img .portfolio-images:hover:nth-of-type(1) {
     background: url(../img/stairs.png) 50% 50% no-repeat;
 }

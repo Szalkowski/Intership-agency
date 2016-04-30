@@ -605,7 +605,7 @@ a {
 
 .newsletter legend {
     position: absolute;
-    top: 17px;
+    top: 15px;
     left: 8px;
     text-transform: uppercase;
     transition: all .3s;
@@ -625,6 +625,7 @@ a {
     top: -8px;
     left: 0;
     height: 0;
+    margin-left: 5px;
     font-size: 10px;
     color: #7beec7;
     transition: all .3s;
@@ -632,6 +633,17 @@ a {
 
 .newsletter input:focus {
     outline: none;
+    padding-left: 15px;
+}
+
+.newsletter input:focus + legend {
+    position: relative;
+    top: -8px;
+    left: 0;
+    height: 0;
+    margin-left: 5px;
+    font-size: 10px;
+    color: #7beec7;
 }
 
 .map .link {

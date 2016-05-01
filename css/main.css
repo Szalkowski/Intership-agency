@@ -620,7 +620,8 @@ a {
 }
 
 .newsletter input:hover + legend,
-.newsletter legend:hover {
+.newsletter legend:hover,
+.newsletter input:focus + legend {
     position: relative;
     top: -8px;
     left: 0;
@@ -634,16 +635,6 @@ a {
 .newsletter input:focus {
     outline: none;
     padding-left: 15px;
-}
-
-.newsletter input:focus + legend {
-    position: relative;
-    top: -8px;
-    left: 0;
-    height: 0;
-    margin-left: 5px;
-    font-size: 10px;
-    color: #7beec7;
 }
 
 .map .link {

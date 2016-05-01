@@ -376,3 +376,10 @@
     background: url(../img/watson.png) 50% 50% no-repeat;
 }
 
+.benefit-icon {
+    float: left;
+    margin: -20px 20px 0 0;
+    font-size: 40px;
+    color: #fff;
+    background: #7beec7;
+}

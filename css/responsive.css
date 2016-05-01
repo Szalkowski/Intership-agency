@@ -316,7 +316,7 @@
         line-height: 1.25em
     }
     .img {
-    display: none;
+        display: none;
     }
     .categories {
         float: none;
@@ -457,6 +457,10 @@
     }
     .benefits {
         margin-top: 290px;
+    }
+    .benefit-icon {
+        font-size: 25px;
+        margin-top: -7px;
     }
     .team-subtitle {
         width: 150px;

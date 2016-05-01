@@ -670,7 +670,7 @@ a {
     top: 15px;
     width: 30px;
     margin-left: 36px;
-    border-top: 1px solid gray;
+    border-top: 1px solid grey;
     transition: width .3s;
 }
 

@@ -1,6 +1,6 @@
 @import "variables.scss";
 
-@mixin content_title {
+@mixin main_font_xl {
     position: relative;
     font-family: $main-font;
     font-size: $font-xl;
@@ -18,7 +18,7 @@
    }
 }
 
-@mixin content {
+@mixin sub_font_m{
     font-family: $sub-font;
     font-size: $font-m;
     font-weight: $font-regular;
@@ -34,7 +34,7 @@
     text-transform: uppercase;
 }
 
-@mixin description {
+@mixin sub_font_s {
     font-family: $sub-font;
     font-size: $font-s;
     font-weight: $font-regular;
@@ -45,4 +45,24 @@
     padding: 0;
     margin: 0;
     list-style-type: none;
+}
+
+@mixin main_font_l {
+font-family: $main-font;
+font-size: $font-l;
+font-weight: $font-bold;
+text-transform: uppercase;
+}
+
+@mixin title_box {
+    width: 750px;
+    margin: $margin-centering;
+    text-align: center;
+
+    h2 {
+        &:before {
+        left: 245px;
+
+        }
+    }
 }

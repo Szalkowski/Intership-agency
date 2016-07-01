@@ -2,7 +2,7 @@
 @import "mixins.scss";
 
 h2 {
-    @include content_title;
+    @include main_font_xl;
 }
 
 ul {
@@ -14,13 +14,20 @@ a {
 }
 
 .info {
-    @include content;
+    @include sub_font_m;
 }
 
 .sub-desc {
-    @include description;
+    @include sub_font_s;
 }
 
+.serv-icon {
+    font-size: 31px;
+}
+
+.title {
+    @include title_box;
+}
 
 * {
     box-sizing: border-box;
@@ -35,7 +42,7 @@ a {
 .header-hp {
     position: relative;
     height: 850px;
-    background: url(../img/headerbg.jpg) 50% 50% no-repeat;
+    background: url(../img/main_img/headerbg.jpg) 50% 50% no-repeat;
     background-size: cover;
     font-family: $main-font;
     span {
@@ -54,22 +61,24 @@ a {
     .hero {
         position: absolute;
         top: 225px;
-        left: calc(50% - 277.5px);
+        left: calc(50% - 25%);
         clear: both;
-        width: 555px;
+        width: 50%;
         height: 200px;
         margin: $margin-centering;
         text-align: center;
         h1 {
+            position: absolute;
             width: 100%;
             line-height: 100px;
             border: 10px solid $text-color;
             text-transform: uppercase;
             font-size: 48px;
+            opacity: 0;
             &:before {
                 content: "we're";
                 position: absolute;
-                top: 2px;
+                top: -40px;
                 left: calc(50% - 50px);
                 width: 100px;
                 line-height: 30px;
@@ -78,10 +87,14 @@ a {
                 font-size: $font-l;
                 background: $highlight-color;
             }
+
         }
         p {
-            @include content;
+            @include sub_font_m;
+            position: absolute;
+            bottom: -40px;
             line-height: 24px;
+            opacity: 0;
         }
     }
 
@@ -107,6 +120,16 @@ a {
             background: $highlight-color;
         }
     }
+    .visible {
+        animation: slide-show 5s linear;
+    }
+    .desk-img {
+        width: 42%;
+
+        img {
+            max-width: 100%;
+        }
+    }
 }
 
 .reasons {
@@ -114,16 +137,101 @@ a {
     height: 940px;
     padding-top: 250px;
 
-    .title {
-        width: 750px;
-        margin: $margin-centering;
-        text-align: center;
+    .content {
+        margin-top: 74px;
+    }
 
-        h2 {
+    .services {
+        width: 50%;
+        float: left;
 
-            &:before {
-                left: 245px;
+        .service {
+            float: left;
+            width: 50%;
+            margin-top: 30px;
+
+            h3 {
+                @include main_font_l;
+            }
+
+            li {
+                line-height: 30px;
             }
         }
+    }
+        .about-photo {
+            float: right;
+            width: 40%;
+
+            img {
+                max-width: 100%;
+            }
+        }
+}
+
+.portfolio {
+    clear: both;
+    height: 1086px;
+    margin-top: 150px;
+
+    .portfolio-box {
+        margin-top: 104px;
+    }
+
+    .categories {
+        float: left;
+        width: 25%;
+
+        h2 {
+            line-height: 48px;
+
+            &:before {
+                all: unset;
+            }
+        }
+
+        .category {
+            padding-left: 30px;
+            font-family: $main-font;
+            font-size: $font-s;
+            font-weight: $font-bold;
+            line-height: 48px;
+        }
+    }
+
+    .img {
+        width: 75%;
+        float: right;
+
+            ul {
+                float: right;
+                width: 100%;
+
+                li {
+                    float: left;
+                    vertical-align: top;
+
+                    img {
+                        display: block;
+                        height: auto;
+                        width: auto;
+                     }
+                }
+            }
+        }
+}
+
+.footer {
+    clear: both;
+}
+@keyframes slide-show {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }

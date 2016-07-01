@@ -8,7 +8,7 @@ $(function() {
         currentSlide = (currentSlide + 1) % lis.length;
         lis.removeClass('visible').eq(currentSlide).addClass('visible');
         desc.removeClass('visible').eq(currentSlide).addClass('visible');
-    }, 3000);
+    }, 5000);
 
     $('.map-wrap').easyGoogleMaps({
     lat: 1.276816,

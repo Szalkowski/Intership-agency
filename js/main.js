@@ -1,4 +1,6 @@
 $(function() {
+
+    /* hero animation */
     $('.hero h1:first, .hero p:first').addClass('visible');
     var lis = $(".hero > h1"),
         desc = $(".hero > p"),
@@ -10,9 +12,14 @@ $(function() {
         desc.removeClass('visible').eq(currentSlide).addClass('visible');
     }, 5000);
 
+    /*google map
     $('.map-wrap').easyGoogleMaps({
     lat: 1.276816,
     lng: 103.848346,
     zoom: 13
-  });
+  });*/
+    $('.newsletter input').blur(function(){
+        $(this).val("");
+    })
+
 });

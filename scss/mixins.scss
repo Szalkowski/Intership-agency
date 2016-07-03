@@ -9,7 +9,7 @@
    &:before {
     content: "";
     position: absolute;
-    bottom: 0;
+    top: 20px;
     left: 0;
     width: 67px;
     height: 21px;
@@ -18,10 +18,30 @@
    }
 }
 
+@mixin main_font_l {
+    font-family: $main-font;
+    font-size: $font-l;
+    font-weight: $font-bold;
+    text-transform: uppercase;
+}
+
+@mixin main_font_s {
+    font-family: $main-font;
+    font-size: $font-s;
+    font-weight: $font-bold;
+}
+
 @mixin sub_font_m{
     font-family: $sub-font;
     font-size: $font-m;
     font-weight: $font-regular;
+}
+
+@mixin sub_font_s {
+    font-family: $sub-font;
+    font-size: $font-s;
+    font-weight: $font-regular;
+    line-height: 24px;
 }
 
 @mixin mgtop {
@@ -34,12 +54,6 @@
     text-transform: uppercase;
 }
 
-@mixin sub_font_s {
-    font-family: $sub-font;
-    font-size: $font-s;
-    font-weight: $font-regular;
-    line-height: 24px;
-}
 
 @mixin lists {
     padding: 0;
@@ -47,22 +61,26 @@
     list-style-type: none;
 }
 
-@mixin main_font_l {
-font-family: $main-font;
-font-size: $font-l;
-font-weight: $font-bold;
-text-transform: uppercase;
-}
 
 @mixin title_box {
-    width: 750px;
+    width: 67%;
     margin: $margin-centering;
     text-align: center;
 
     h2 {
         &:before {
-        left: 245px;
-
+        left: calc(50% - 128px);
         }
     }
+}
+
+@mixin legend {
+    position: relative;
+    top: -8px;
+    left: 0;
+    height: 0;
+    margin-left: 5px;
+    font-size: 10px;
+    color: #7beec7;
+    transition: all .3s;
 }

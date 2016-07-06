@@ -65,14 +65,14 @@
         .contact {
             .touch-box {
                 float: none;
-                width: unset;
+                width: inherit;
                 text-align: center;
             }
             a {
                 margin: $margin-centering;
             }
             .newsletter {
-                width: unset;
+                width: inherit;
             }
         }
         .copyrights {
@@ -82,8 +82,11 @@
 }
 
 @media screen and (max-width: 653px) {
+    h2 {
+        font-size: 29px;
+    }
     .title {
-        width: unset;
+        width: inherit;
     }
 
     .header-hp{
@@ -95,7 +98,7 @@
 
             h1 {
                 line-height: 50px;
-                font-size: 25px;
+                font-size: 24px;
             }
         }
     }
@@ -103,17 +106,17 @@
         .services {
             .service {
                 float: none;
-                width: unset;
+                width: inherit;
             }
         }
     }
     .portfolio {
         .categories {
-            float: unset;
-            width: unset;
+            float: none;
+            width: inherit;
         }
         .portfolio_images {
-            width: unset;
+            width: inherit;
 
             .column {
                 width: 100%;

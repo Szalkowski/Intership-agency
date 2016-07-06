@@ -172,7 +172,7 @@ a {
     .portfolio .categories h2 {
       line-height: 48px; }
       .portfolio .categories h2:before {
-        all: unset; }
+        background: none; }
     .portfolio .categories .category {
       font-family: Montserrat, sans-serif;
       font-size: 14px;
@@ -310,7 +310,7 @@ a {
         top: -1px;
         left: -15px; }
     .footer .site-map .link:first-child:before {
-      all: unset; }
+      content: none; }
   .footer .copyrights {
     font-family: Open Sans, sans-serif;
     font-size: 14px;

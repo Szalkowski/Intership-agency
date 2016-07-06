@@ -184,7 +184,7 @@ a {
             line-height: 48px;
 
             &:before {
-                all: unset;
+                background: none;
             }
         }
 
@@ -339,7 +339,7 @@ a {
         }
         .link:first-child {
             &:before {
-                all: unset;
+                content: none;
             }
         }
     }

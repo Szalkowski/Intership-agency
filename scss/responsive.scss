@@ -5,3 +5,119 @@
     width: 85%;
     margin: $margin-centering;
 }
+
+@media screen and (max-width: 1248px) {
+    .header-hp {
+        .history {
+            width: 41%;
+        }
+    }
+    .footer {
+        .contact {
+            .newsletter {
+                h3 {
+                    width: 100%;
+                }
+                form {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1074px) {
+    .footer {
+        .site-map {
+            width: 50%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header-hp {
+        .desk-img {
+            display: none;
+        }
+        .history {
+            left: 7.5%;
+            width: 85%;
+        }
+    }
+    .reasons {
+        .services {
+            width: 100%;
+        }
+        .about-photo {
+            clear: both;
+            float: none;
+            width: 70%;
+            padding-top: 50px;
+            margin: $margin-centering;
+        }
+    }
+    .portfolio {
+        .portfolio_images {
+            width: 65%;
+        }
+    }
+    .footer {
+        .contact {
+            .touch-box {
+                float: none;
+                width: unset;
+                text-align: center;
+            }
+            a {
+                margin: $margin-centering;
+            }
+            .newsletter {
+                width: unset;
+            }
+        }
+        .copyrights {
+            width: 50%;
+        }
+    }
+}
+
+@media screen and (max-width: 653px) {
+    .title {
+        width: unset;
+    }
+
+    .header-hp{
+        height: 950px;
+        .hero {
+            left: 7.5%;
+            width: 85%;
+            height: 165px;
+
+            h1 {
+                line-height: 50px;
+                font-size: 25px;
+            }
+        }
+    }
+    .reasons {
+        .services {
+            .service {
+                float: none;
+                width: unset;
+            }
+        }
+    }
+    .portfolio {
+        .categories {
+            float: unset;
+            width: unset;
+        }
+        .portfolio_images {
+            width: unset;
+
+            .column {
+                width: 100%;
+            }
+        }
+    }
+}

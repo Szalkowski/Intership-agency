@@ -107,7 +107,7 @@ a {
         position: absolute;
         bottom: -20px;
         left: 50%;
-        width: 41%;
+        width: 555px;
         z-index: 999999999;
         p {
             line-height: 30px;
@@ -134,8 +134,7 @@ a {
 
 .reasons {
     position: relative;
-    height: 940px;
-    padding-top: 250px;
+    padding-top: 150px;
 
     .content {
         margin-top: 74px;
@@ -171,8 +170,7 @@ a {
 
 .portfolio {
     clear: both;
-    height: 1385px;
-    margin-top: 150px;
+    padding-top: 150px;
 
     .portfolio-box {
         margin-top: 104px;
@@ -205,7 +203,7 @@ a {
         .column {
             float: left;
             width: 30.7%;
-            margin-left: 30px;
+            margin-left: 3.51%;
 
             .photo {
                 margin-bottom: 30px;
@@ -225,6 +223,7 @@ a {
 .footer {
     clear: both;
     height: 485px;
+    padding-top: 150px;
 
     .contact {
         min-height: 330px;
@@ -370,4 +369,27 @@ a {
     100% {
         opacity: 0;
     }
+}
+
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
 }

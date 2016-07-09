@@ -34,8 +34,10 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
     .header-hp {
+        height: 900px;
+
         .desk-img {
             display: none;
         }
@@ -65,14 +67,14 @@
         .contact {
             .touch-box {
                 float: none;
-                width: inherit;
+                width: 100%;
                 text-align: center;
             }
             a {
                 margin: $margin-centering;
             }
             .newsletter {
-                width: inherit;
+                width: 100%;
             }
         }
         .copyrights {
@@ -120,6 +122,32 @@
 
             .column {
                 width: 100%;
+            }
+        }
+    }
+    .footer {
+        .contact {
+            .touch-box {
+                width: 100%;
+            }
+            .newsletter {
+                width: 100%;
+
+                form {
+                    height: 100px;
+
+                    fieldset {
+
+                        input {
+                            width: 100%;
+                        }
+                        button {
+                            float: none;
+                            width: 100%;
+                        }
+
+                    }
+                }
             }
         }
     }
